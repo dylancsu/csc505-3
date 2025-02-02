@@ -12,4 +12,4 @@ print_ = Page("sync", "main", "list")
 pages = [main_, list_, print_]
 
 for i, page in enumerate(pages, start=1):
-    print(f"Page {i}: {page.name}. Reachable from {page.to}, reaches {page.frm}")
+    print(f"Page {i}: {page.name}. Reachable from {page.frm}, reaches {page.to}")
