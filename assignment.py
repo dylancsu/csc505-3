@@ -5,11 +5,11 @@ class Page:
         self.to=to
         self.frm=frm
 
-main = Page("main", "list", "any")
-list = Page("list", "main, print", "main")
-print = Page("sync", "main", "list")
+main_ = Page("main", "list", "any")
+list_ = Page("list", "main, print", "main")
+print_ = Page("sync", "main", "list")
 
-pages = [main, list, print]
+pages = [main_, list_, print_]
 
 for i, page in enumerate(pages, start=1):
     print(f"Page {i}: {page.name}. Reachable from {page.to}, reaches {page.frm}")
